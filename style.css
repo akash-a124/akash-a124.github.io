@@ -1,51 +1,141 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset and Base */
+* {
   margin: 0;
   padding: 0;
-  color: #333;
-  background-color: #f4f4f4;
+  box-sizing: border-box;
 }
 
-header {
-  background: #0f1b2b;
+body {
+  font-family: 'Segoe UI', sans-serif;
   color: #fff;
-  padding: 1em;
-  text-align: center;
+  background-color: #121212;
+  line-height: 1.6;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
+/* Navigation & Hero */
+.hero {
+  background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+  padding: 2em 1em;
+  text-align: center;
+  position: relative;
+}
+
+.hero-content {
+  margin-bottom: 2em;
+}
+
+.hero-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-top: 0.5em;
+  color: #ff5e57;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+.main-nav {
   display: flex;
   justify-content: center;
+  gap: 1.5em;
+  flex-wrap: wrap;
+  margin-top: 1.5em;
 }
 
-nav li {
-  margin: 0 15px;
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
 }
 
-nav a {
-  color: white;
+.main-nav a {
+  color: #fff;
   text-decoration: none;
 }
 
-nav a.active {
-  font-weight: bold;
-  text-decoration: underline;
+.btn-contact {
+  background: #ff5e57;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
 }
 
-.intro {
-  padding: 2em;
+/* About Section */
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3em 2em;
+  background-color: #1e1e2f;
+  gap: 2em;
+}
+
+.about-left img {
+  max-width: 280px;
+  border-radius: 10px;
+}
+
+.about-right {
+  flex: 1;
+}
+
+.about-right h2 span {
+  color: #ff5e57;
+  font-weight: 700;
+}
+
+.about-info {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.5em;
+}
+
+.btn-download {
+  margin-top: 1em;
+  background-color: #ff5e57;
+  color: white;
+  padding: 0.6em 1.2em;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Services */
+.services-section {
+  background-color: #181828;
+  padding: 3em 2em;
   text-align: center;
-  background-color: #fff;
 }
 
+.services-section h2 span {
+  color: #ff5e57;
+}
+
+.services-grid {
+  display: grid;
+  gap: 1.5em;
+  margin-top: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.service-card {
+  border: 1px solid #333;
+  padding: 1.5em;
+  background: #2a2a3b;
+  border-radius: 8px;
+}
+
+/* Footer */
 footer {
+  background-color: #0f0f1f;
   text-align: center;
   padding: 1em;
-  background: #0f1b2b;
-  color: white;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  color: #aaa;
 }
