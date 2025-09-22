@@ -6,23 +6,25 @@ body {
   color: #333;
 }
 
+/* Navigation - top right stacked */
 nav {
+  position: fixed;
+  top: 0;
+  right: 0;
   background: #222;
   padding: 1rem;
-  position: sticky;
-  top: 0;
+  border-radius: 0 0 0 10px;
+  z-index: 1000;
 }
 
 nav ul {
   list-style: none;
-  display: flex;
-  justify-content: center;
   margin: 0;
   padding: 0;
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 10px 0;
 }
 
 nav ul li a {
@@ -39,7 +41,7 @@ header {
   background: linear-gradient(135deg, #4a90e2, #9013fe);
   color: #fff;
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
 }
 
 header h1 {
