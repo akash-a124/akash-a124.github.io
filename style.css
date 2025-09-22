@@ -1,97 +1,110 @@
-body {
-  font-family: Arial, sans-serif;
+/* General Reset */
+* {
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
-  color: #333;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Navigation - top right stacked */
-nav {
+body {
+  background-color: #0d0d1a;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Navbar */
+header {
   position: fixed;
+  width: 100%;
   top: 0;
-  right: 0;
-  background: #222;
-  padding: 1rem;
-  border-radius: 0 0 0 10px;
+  left: 0;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(13, 13, 26, 0.9);
   z-index: 1000;
 }
 
-nav ul {
+header .logo {
+  color: #ff3c41;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  gap: 25px;
 }
 
-nav ul li {
-  margin: 10px 0;
-}
-
-nav ul li a {
+header ul li a {
   color: #fff;
   text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+header ul li a:hover,
+header ul li a.active {
+  color: #ff3c41;
+}
+
+header .btn-contact {
+  background: #ff3c41;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+header .btn-contact:hover {
+  background: #e23237;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url('your-bg.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  color: #ff3c41;
+  font-size: 48px;
   font-weight: bold;
 }
 
-nav ul li a:hover {
-  color: #4a90e2;
+.hero p {
+  font-size: 18px;
+  color: #ddd;
+  margin-top: 10px;
 }
 
-header {
-  background: linear-gradient(135deg, #4a90e2, #9013fe);
+/* Section Titles */
+.section-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
   color: #fff;
-  text-align: center;
-  padding: 5rem 2rem;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
+.section-subtitle {
+  color: #ff3c41;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
 }
 
-header p {
-  font-size: 1.2rem;
-}
-
-section {
-  padding: 3rem 2rem;
-  max-width: 900px;
-  margin: auto;
-}
-
-h2 {
-  color: #4a90e2;
-  margin-bottom: 1rem;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-footer {
-  text-align: center;
-  padding: 1.5rem;
-  background: #222;
-  color: #fff;
-  margin-top: 2rem;
-}
-
-#contact p {
-  font-size: 1.1rem;
-  margin: 0.5rem 0;
-}
-
-#contact i {
-  color: #4a90e2;
-  margin-right: 8px;
-}
-
-#contact a {
-  text-decoration: none;
-  color: #9013fe;
-  font-weight: bold;
-}
-
-#contact a:hover {
-  text-decoration: underline;
+/* About Section */
+.about {
+  display: flex;
+  justify-content: space-between;
+  al
 }
