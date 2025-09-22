@@ -1,107 +1,95 @@
-/* Reset */
-* {
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  background: #f9f9f9;
+  color: #333;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #000;
-  color: #fff;
-  line-height: 1.6;
-}
-
-/* Header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 60px;
-  position: fixed;
+nav {
+  background: #222;
+  padding: 1rem;
+  position: sticky;
   top: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 1000;
 }
 
-header .logo {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-header nav ul {
+nav ul {
   list-style: none;
   display: flex;
-  gap: 30px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
-header nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  transition: 0.3s;
+nav ul li {
+  margin: 0 15px;
 }
 
-header nav ul li a:hover {
-  color: #00aaff;
-}
-
-/* Hero Section */
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 120px 60px;
-  min-height: 100vh;
-}
-
-.hero-text {
-  max-width: 50%;
-}
-
-.hero-text h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.hero-text p {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-  color: #aaa;
-}
-
-.btn {
-  display: inline-block;
-  padding: 12px 25px;
-  background: #0077ff;
+nav ul li a {
   color: #fff;
   text-decoration: none;
-  border-radius: 6px;
-  margin-bottom: 40px;
-}
-
-.stats {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.stats div {
-  font-size: 0.9rem;
-  color: #bbb;
-}
-
-.stats div span {
-  display: block;
-  font-size: 1.5rem;
   font-weight: bold;
-  color: #fff;
 }
 
-/* Hero Image */
-.hero-img img {
-  max-width: 400px;
-  border-radius: 50%;
-  filter: brightness(0.8);
+nav ul li a:hover {
+  color: #4a90e2;
+}
+
+header {
+  background: linear-gradient(135deg, #4a90e2, #9013fe);
+  color: #fff;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+section {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  color: #4a90e2;
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #222;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+#contact p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+#contact i {
+  color: #4a90e2;
+  margin-right: 8px;
+}
+
+#contact a {
+  text-decoration: none;
+  color: #9013fe;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  text-decoration: underline;
 }
